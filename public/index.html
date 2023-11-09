@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Individual Thrive Brochure</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./formSubmit.js" defer></script>
+</head>
+<body class="px-32 font-jakarta">
+  <section class="container flex items-center gap-8 my-12">
+    <div class="imgWrapper w-2/3">
+      <img src="./thrive_individual.webp" alt="Thrive brochure" class="w-full rounded-lg">
+    </div>
+    <div id="formWrapper" class="formWrapper w-1/2">
+      <div class="textWrapper font-regular flex flex-col gap-1 mb-8">
+        <h1 class="text-4xl mb-5 text-headingGray">Individual <span class="font-extrabold">thrive</span> Brochure</h1>
+        <p class="text-textGray font-light">To download the brochure, enter your email address.</p>
+      </div>
+
+      <form method="POST" action="/individual" id="form" class="flex gap-4 flex-col justify-center items-stretch" target="_blank">
+        <div class="input flex flex-col gap-1">
+          <label for="email" class="text-sm font-medium">Email address</label>
+          <input type="email" name="email" id="email" class="border border-gray rounded-md p-2 outline-blue" placeholder="ezekial@gmail.com">
+        </div>
+
+        <button type="submit" class="text-center mt-5 py-2 border border-blue rounded-lg text-white bg-blue hover:bg-white hover:text-blue transition-all duration-300" id="downloadBtn" target="_blank">DOWNLOAD</button>
+      </form>
+    </div>
+  </section>
+  
+</body>
+</html>
